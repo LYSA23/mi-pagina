@@ -3,9 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <title>EL SEÑOR ES MI PASTOR</title>
+    <style>
+        :root{
+            --accent: #e91e63; /* rosa similar al ejemplo */
+            --text: #333;
+            --max-width: 1100px;
+            --gutter: 24px;
+            --heading-font: 'Helvetica Neue', Arial, sans-serif;
+        }
+        body{
+            font-family: var(--heading-font);
+            color: var(--text);
+            margin: 0;
+            padding: 40px 16px;
+            background: #fff;
+        }
+        .container{
+            max-width: var(--max-width);
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: start;
+        }
+        h1{ font-size: 36px; margin: 0 0 16px 0; }
+        h2{ font-size: 20px; margin: 0 0 24px 0; color: #555 }
+        h3{ font-size: 28px; margin: 0 0 12px 0 }
+        .section{ padding: 0 8px }
+        ul{ list-style: none; padding: 0; margin: 12px 0 32px 0 }
+        li{ padding: 6px 12px; position: relative; margin-left: 16px }
+        /* línea vertical de color a la izquierda del bloque de items */
+        .accent-list li::before{
+            content: '';
+            position: absolute;
+            left: -16px;
+            top: 8px;
+            width: 6px;
+            height: calc(100% - 16px);
+            background: var(--accent);
+            border-radius: 2px;
+            transform-origin: left top;
+        }
+        /* mejorar aspecto para bloques separados */
+        .block{ margin-bottom: 24px }
+        @media (max-width: 800px){
+            .container{ grid-template-columns: 1fr; padding: 0 12px }
+            h1{ font-size: 28px }
+            h3{ font-size: 22px }
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <h1>MI BIBLIA</h1>
+    <h2>Libros de la Biblia</h2>
+    <div class="container">
+        <div class="section">
+            <h3>Antiguo Testamento</h3>
+            <div class="block">
+            <ul class="accent-list">
+        <li>Génesis</li>
+        <li>Éxodo</li>
+        <li>Levítico</li>
+        <li>Números</li>
+        <li>Deuteronomio</li>
+        <li>Josué</li>
+        <li>Jueces</li>
+        <li>Rut</li>
+        <li>1 Samuel</li>
+        <li>2 Samuel</li>
+        <li>1 Reyes</li>
+        <li>2 Reyes</li>
+        <li>1 Crónicas</li>
+        <li>2 Crónicas</li>
+        <li>Esdras</li>
+        <li>Nehemías</li>
+        <li>Ester</li>
+        <li>Job</li>
+        <li>Salmos</li>
+        <li>Proverbios</li>
+        <li>Eclesiastés</li>
+        <li>Cantar de los Cantares</li>
+        <li>Isaías</li>
+        <li>Jeremías</li>
+        <li>Lamentaciones</li>
+        <li>Ezequiel</li>
+        <li>Daniel</li>
+        <li>Oseas</li>
+        <li>Joel</li>
+        <li>Amós</li>
+        <li>Abdías</li>
+        <li>Jonás</li>
+        <li>Miqueas</li>
+        <li>Nahúm</li>
+        <li>Habacuc</li>
+        <li>Sofonías</li>
+        <li>Hageo</li>
+        <li>Zacarías</li>
+        <li>Malaquías</li>
+            </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Nuevo Testamento</h3>
+            <div class="block">
+            <ul class="accent-list">
+        <li>Mateo</li>
+        <li>Marcos</li>
+        <li>Lucas</li>
+        <li>Juan</li>
+        <li>Hechos</li>
+        <li>Romanos</li>
+        <li>1 Corintios</li>
+        <li>2 Corintios</li>
+        <li>Gálatas</li>
+        <li>Efesios</li>
+        <li>Filipenses</li>
+        <li>Colosenses</li>
+        <li>1 Tesalonicenses</li>
+        <li>2 Tesalonicenses</li>
+        <li>1 Timoteo</li>
+        <li>2 Timoteo</li>
+        <li>Tito</li>
+        <li>Filemón</li>
+        <li>Hebreos</li>
+        <li>Santiago</li>
+        <li>1 Pedro</li>
+        <li>2 Pedro</li>
+        <li>1 Juan</li>
+        <li>2 Juan</li>
+        <li>3 Juan</li>
+        <li>Judas</li>
+        <li>Apocalipsis</li>
+            </ul>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
